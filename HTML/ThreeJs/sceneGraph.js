@@ -40,6 +40,7 @@ const sphere = new Three.SphereGeometry(radius, width, height);
 //sun material
 const sunMaterial = new Three.MeshPhongMaterial({
   emissive: 0xffff00,
+  shininess: 0,
 });
 
 const sunMesh = new Three.Mesh(sphere, sunMaterial);
